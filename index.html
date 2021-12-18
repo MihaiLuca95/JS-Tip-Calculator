@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-light">
+            <div class="logo text-center">
+                <h1 class="logo__heading">Tipsy</h1>
+            </div>
+            <div class="content">
+                <div class="form-div">
+                    <h3>Enter bill amount:</h3>
+                    <label for="billAmt" class="label-bill">$</label>
+                    <input type="text" class="input-bill" id="billAmt" name="bill-amount">
+
+                </div>
+                <div class="radioChoose" id="rdChoose">
+                    <h3>Service quality:</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio30" value="0.3">
+                        <label class="form-check-label" for="flexRadio30">
+                            30% -Outstanding
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio20" value="0.2">
+                        <label class="form-check-label" for="flexRadio20">
+                            20% -Good
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio15" value="0.15">
+                        <label class="form-check-label" for="flexRadio15">
+                            15% -OKish
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio10" value="0.1">
+                        <label class="form-check-label" for="flexRadio10">
+                            10% -Bad
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio0" value="0">
+                        <label class="form-check-label" for="flexRadio0">
+                            0% &nbsp;&nbsp;-Never coming back
+                        </label>
+                    </div>
+                </div>
+                <div class="nr-person">
+                    <h3 class="inline-text">No of person:</h3>
+                    <select id="nrOfPeople" class="no-of-people">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer text-center">
+                <button id="calculateBill" class="btn btn-secondary">Calculate</button>
+                <div class="price">
+                    <h3 class="total">Total per person</h3>
+                    <div class="result-per-person" id="totalPerPerson">$0.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tip-calculator.js"></script>
+</body>
+</html>
