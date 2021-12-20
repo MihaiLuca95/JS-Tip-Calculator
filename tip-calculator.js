@@ -13,5 +13,4 @@ btn.addEventListener('click', () => {
     let resultForEach = (parseFloat(billAmout.value) * r / parseInt(numberOfP.value)).toFixed(2)
 
     const totalAmt = (billAmout.value != '' &&  r != null) ? result.innerHTML = `$${resultForEach}` : alert("Please complete all field")
-    return totalAmt
 })
